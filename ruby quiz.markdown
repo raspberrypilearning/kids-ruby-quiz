@@ -102,25 +102,29 @@ So we have set the condition, now we must create the manner in which we ask the 
  ```
 With the question asked we now need to capture their answer and to do that we use *ask* to capture their answer and store it as a variable called *answer*. You'll remember that we created a variable called *answer* at the start of the quiz. Inside that variable we stored a blank value **" "** we did this so that the program would progress. If we hadn't of done this then the quiz would of stopped before it asked the first question.
  
- ```Ruby
+```Ruby
   answer = ask "What is your answer?"
  ```
  
  Now we compare the answer given against the correct answer, and to do this we use an *if* statement.
  
- *if: A conditional statement, where **if** the condition is met an action is taken.*
+ *if: A conditional statement, where if the condition is met an action is taken.*
  
  In this quiz we ask 
  
- *if the **answer** given by the user is **not** the same as "A"*
+ *if the **answer** given by the user is not the same as "A"*
  
- ```Ruby
+```Ruby
   if answer != "A"
  ```
- ```Ruby
+ So if the answer given by the player is not the same as the answer that we expected, then an alert is created informing the player of a wrong answer and that they should try again.
+ 
+```Ruby
     alert "I'm sorry that's the wrong answer, try again"
   end
 end
+```
+```Ruby
 alert "Correct - Well done!!!"
 score = score + 1
 alert "Your score is " + score.to_s
