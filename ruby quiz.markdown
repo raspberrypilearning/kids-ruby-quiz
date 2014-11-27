@@ -69,7 +69,7 @@ name = ask "What is your name?"
 ```
 For the next line of our quiz we greet the player by their name, which has has been saved as the variable *name*. But we do something rather clever with this, we use *alert* to create another pop up box that joins "Hello " and the players name together. This is called concatenation.
 
-*Concatenation: Concatenation is the operation of joining character strings end-to-end. For example, the concatenation of "snow" and "ball" is "snowball".
+*Concatenation: Concatenation is the operation of joining character strings end-to-end. For example, the concatenation of "snow" and "ball" is "snowball".*
 
 ```Ruby
 alert "Hello " + name
