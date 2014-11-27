@@ -41,7 +41,7 @@ With the application installed now we can create our quiz game.
 Our quiz is split into three sections of code
 
 - An introduction
-- Question 1
+- Questions
 - Game Over & Final Score
 
 So let's step through each of these sections and understand how they work.
@@ -74,7 +74,7 @@ alert "Hello " + name
 ```
 Next we create a new variable called *score* which will contain the players score. The initial value stored is zero, which is a number, to be exact it is an integer.
 
-*Integer: Is a number that can be written without a decimal place, such as 1, 5 and 9.
+*Integer: Is a number that can be written without a decimal place, such as 1, 5 and 9.*
 
 ```Ruby
 score = 0
@@ -82,10 +82,14 @@ score = 0
 The last part of our introduction is another *alert* advising the player of their score, which at the start of the game is always zero. You can see that we are again using *concatenation* to join "Your score is " to their actual score. But can you see that score is a little different?
 Concatenation can only join *strings* together and our score is an *integer* so the two cannot be joined. To join them together we must temporarily alter score to become a *string* and this is done via *score.to_s*.
 
+*String: A string is traditionally a sequence of characters, for example "Hello" is a string.*
+
 ```Ruby
 alert "Your score is " + score.to_s
 ```
 ###Section 2: Questions
+A quiz needs questions, but how do we know if the player has answered them correctly?
+In programming we can compare an answer given by the player to what the correct answer is, and until this answer is correct the player cannot progress through the quiz. In Ruby we can instruct the code to repeat a sequence until a certain *condition* is met. In this case we ask a question to the user and give them three possible answers, labelled A, B or C
 
 ```Ruby
 until answer == "A"
