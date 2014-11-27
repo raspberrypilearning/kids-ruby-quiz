@@ -38,17 +38,15 @@ Launch the Kids Ruby application by selecting it from the menu, in a few seconds
 With the application installed now we can create our quiz game.
 
 ###Creating the sequence
-Our quiz is split into five sections of code
+Our quiz is split into three sections of code
 
 - An introduction
 - Question 1
-- Question 2
-- Question 3
 - Game Over & Final Score
 
 So let's step through each of these sections and understand how they work.
 ###Section 1: Introduction
-In the introduction we firstly create a variable.
+In the introduction we first create a variable.
 
 *Variable: A variable is a container into which we can store data. Think of it as an empty box, we can put anything inside of it and then name it for later use.*
 
@@ -74,12 +72,21 @@ For the next line of our quiz we greet the player by their name, which has has b
 ```Ruby
 alert "Hello " + name
 ```
+Next we create a new variable called *score* which will contain the players score. The initial value stored is zero, which is a number, to be exact it is an integer.
 
+*Integer: Is a number that can be written without a decimal place, such as 1, 5 and 9.
 
 ```Ruby
 score = 0
+```
+The last part of our introduction is another *alert* advising the player of their score, which at the start of the game is always zero. You can see that we are again using *concatenation* to join "Your score is " to their actual score. But can you see that score is a little different?
+Concatenation can only join *strings* together and our score is an *integer* so the two cannot be joined. To join them together we must temporarily alter score to become a *string* and this is done via *score.to_s*.
+
+```Ruby
 alert "Your score is " + score.to_s
 ```
+###Section 2: Questions
+
 ```Ruby
 until answer == "A"
   alert "Question 1 - Where does Father Christmas / Santa Claus live?"
