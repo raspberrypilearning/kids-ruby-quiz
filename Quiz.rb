@@ -7,8 +7,7 @@ alert "Hello " + name
 score = 0
 alert "Your score is " + score.to_s
 until answer == "A"
-  alert "Question 1 - Where does Father Christmas / Santa Claus live?"
-  alert "A: North Pole. B: Santa Monica. C: Cambridge"
+  alert "Question 1 - Where does Father Christmas / Santa Claus live?\nA: North Pole. B: Santa Monica. C: Cambridge"
   answer = ask "What is your answer?"
   if answer != "A"
     alert "I'm sorry that's the wrong answer, try again"
@@ -19,8 +18,7 @@ score = score + 1
 alert "Your score is " + score.to_s
 answer = " "
 until answer == "A"
-  alert "Question 2 - Which reindeer has a bright red nose?"
-  alert "A: Rudolph. B: Prancer. C: Vixen"
+  alert "Question 2 - Which reindeer has a bright red nose?\nA: Rudolph. B: Prancer. C: Vixen"
   answer = ask "What is your answer?"
   if answer != "A"
     alert "I'm sorry that's the wrong answer, try again"
@@ -31,8 +29,7 @@ score = score + 1
 alert "Your score is " + score.to_s
 answer = " "
 until answer == "C"
-  alert "Question 3 - What helps reindeer to fly?"
-  alert "A: Burgers. B: Chicken. C: Magic dust"
+  alert "Question 3 - What helps reindeer to fly?\nA: Burgers. B: Chicken. C: Magic dust"
   answer = ask "What is your answer?"
   if answer != "C"
     alert "I'm sorry that's the wrong answer, try again"
@@ -42,3 +39,4 @@ alert "Correct - Well done!!!"
 score = score + 1
 alert "Your score is " + score.to_s
 answer = " "
+alert "Congratulations you scored "+score.to_s+"\n GAME OVER"

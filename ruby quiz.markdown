@@ -95,29 +95,27 @@ In the example below, until the player chooses **A** the code will continue to l
 ```Ruby
 until answer == "A"
 ```
-So we have set the condition, now we must create the manner in which we ask the player a question. To do this we return to *alert*.
+So we have set the condition, now we must create the manner in which we ask the player a question. To do this we return to using an *alert*. You will see in the Question text there is **\n** this is an instruction to create a new line of text underneath, similar to when you press Enter on your keyboard.
 
 ```Ruby
-  alert "Question 1 - Where does Father Christmas / Santa Claus live?"
+  alert "Question 1 - Where does Father Christmas / Santa Claus live?\nA: North Pole. B: Santa Monica. C: Cambridge"
  ```
+With the question asked we now need to capture their answer and to do that we use *ask* to capture their answer and store it as a variable called *answer*. You'll remember that we created a variable called *answer* at the start of the quiz. Inside that variable we stored a blank value **" "** we did this so that the program would progress. If we hadn't of done this then the quiz would of stopped before it asked the first question.
  
  ```Ruby
-  alert "A: North Pole. B: Santa Monica. C: Cambridge"
   answer = ask "What is your answer?"
+ ```
+ ```Ruby
   if answer != "A"
     alert "I'm sorry that's the wrong answer, try again"
   end
 end
-```
-
-```Ruby
 alert "Correct - Well done!!!"
 score = score + 1
 alert "Your score is " + score.to_s
 answer = " "
 until answer == "A"
-  alert "Question 2 - Which reindeer has a bright red nose?"
-  alert "A: Rudolph. B: Prancer. C: Vixen"
+  alert "Question 2 - Which reindeer has a bright red nose?\nA: Rudolph. B: Prancer. C: Vixen"
   answer = ask "What is your answer?"
   if answer != "A"
     alert "I'm sorry that's the wrong answer, try again"
@@ -128,8 +126,7 @@ score = score + 1
 alert "Your score is " + score.to_s
 answer = " "
 until answer == "C"
-  alert "Question 3 - What helps reindeer to fly?"
-  alert "A: Burgers. B: Chicken. C: Magic dust"
+  alert "Question 3 - What helps reindeer to fly?\nA: Burgers. B: Chicken. C: Magic dust"
   answer = ask "What is your answer?"
   if answer != "C"
     alert "I'm sorry that's the wrong answer, try again"
@@ -139,6 +136,7 @@ alert "Correct - Well done!!!"
 score = score + 1
 alert "Your score is " + score.to_s
 answer = " "
+alert "Congratulations you scored "+score.to_s+"\n GAME OVER"
 ```
 ## Licence
 
