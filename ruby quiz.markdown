@@ -164,6 +164,9 @@ For the last line of our quiz we create a final alert in the same manner as we p
 ```Ruby
 alert "Congratulations you scored "+score.to_s+"\n GAME OVER"
 ```
+Putting this all together it looks like this
+![Animation of the quiz sequence](images/quiz.gif)
+
 ## Licence
 
 Unless otherwise specified, everything in this repository is covered by the following licence:
