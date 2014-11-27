@@ -112,7 +112,7 @@ With the question asked we now need to capture their answer and to do that we us
  
  In this quiz we ask 
  
- *if the **answer** given by the user is not the same as "A"*
+ *if the answer given by the user is not the same as "A"*
  
 ```Ruby
   if answer != "A"
