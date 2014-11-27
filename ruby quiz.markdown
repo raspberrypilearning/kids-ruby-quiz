@@ -34,14 +34,37 @@ Launch the Kids Ruby application by selecting it from the menu, in a few seconds
 
 ![Image of Kids Ruby ready to use](images/4.png)
 
+##Coding our Quiz
+With the application installed now we can create our quiz game.
+
+###Creating the sequence
+Our quiz is split into five sections of code
+
+- An introduction
+- Question 1
+- Question 2
+- Question 3
+- Game Over & Final Score
+
+So let's step through each of these sections and understand how they work.
+###Section 1: Introduction
+In the introduction we firstly create a variable.
+
+- Variable: A variable is a container into which we can store data. Think of it as an empty box, we can put anything inside of it and then name it for later use.
+
+In the introduction we create a variable called *answer* and we store a blank value inside of it.
+
 ```Ruby
 answer = " "
-
+```
+```Ruby
 alert "Welcome to the Hour of Code Quiz"
 name = ask "What is your name?"
 alert "Hello " + name
 score = 0
 alert "Your score is " + score.to_s
+```
+```Ruby
 until answer == "A"
   alert "Question 1 - Where does Father Christmas / Santa Claus live?"
   alert "A: North Pole. B: Santa Monica. C: Cambridge"
