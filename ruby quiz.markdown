@@ -28,7 +28,7 @@ sudo dpkg -i kidsruby-1.3.2-armv6l.deb
 
 This will install Kids Ruby on to your Raspberry Pi. Once it has been installed it will be available via the Programming menu.
 
-![Image of the Raspberry Pi desktop highlighting the location of the Kids Ruby application](images/2.png)
+![Image of the Raspberry Pi desktop highlighting the location of the Kids Ruby application](images/3.png)
 
 Launch the Kids Ruby application by selecting it from the menu, in a few seconds the application will be ready to use.
 
