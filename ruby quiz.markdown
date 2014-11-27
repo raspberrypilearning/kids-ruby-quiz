@@ -30,6 +30,10 @@ This will install Kids Ruby on to your Raspberry Pi. Once it has been installed 
 
 ![Image of the Raspberry Pi desktop highlighting the location of the Kids Ruby application](images/2.png)
 
+Launch the Kids Ruby application by selecting it from the menu, in a few seconds the application will be ready to use.
+
+![Image of Kids Ruby ready to use](images/4.png)
+
 ```Ruby
 answer = " "
 
