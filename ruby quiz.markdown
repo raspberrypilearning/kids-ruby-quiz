@@ -1,6 +1,6 @@
-# Getting started with Kids Ruby
+# Creating your own quiz using Kids Ruby
 
-Ruby is an easy to learn language that was created in the late 1990s by Yukihiro "Matz" Matsumoto as a general purpose programming language. In fact Ruby is the language that is used to create music in Sonic Pi.
+Ruby is an easy to learn language that was created in the late 1990s by Yukihiro "Matz" Matsumoto as a general purpose programming language. In fact Ruby is the language that is used to create music in Sonic Pi. In this tutorial we will create a quiz using a special application called Kids Ruby.
 
 ##Requirements
 As well as a Raspberry Pi with an SD card loaded with Raspbian, you'll also need:
@@ -26,7 +26,9 @@ sudo dpkg -i kidsruby-1.3.2-armv6l.deb
 ```
 ![Image of the LXTerminal running the installation command](images/1.png)
 
-This will install Kids Ruby on to your Raspberry Pi
+This will install Kids Ruby on to your Raspberry Pi. Once it has been installed it will be available via the Programming menu.
+
+![Image of the Raspberry Pi desktop highlighting the location of the Kids Ruby application](images/2.png)
 
 ```Ruby
 answer = " "
