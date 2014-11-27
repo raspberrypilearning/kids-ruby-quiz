@@ -90,16 +90,27 @@ alert "Your score is " + score.to_s
 ###Section 2: Questions
 A quiz needs questions, but how do we know if the player has answered them correctly?
 In programming we can compare an answer given by the player to what the correct answer is, and until this answer is correct the player cannot progress through the quiz. In Ruby we can instruct the code to repeat a sequence until a certain *condition* is met. In this case we ask a question to the user and give them three possible answers, labelled A, B or C
+In the example below, until the player chooses **A** the code will continue to loop.
 
 ```Ruby
 until answer == "A"
+```
+So we have set the condition, now we must create the manner in which we ask the player a question. To do this we return to *alert*.
+
+```Ruby
   alert "Question 1 - Where does Father Christmas / Santa Claus live?"
+ ```
+ 
+ ```Ruby
   alert "A: North Pole. B: Santa Monica. C: Cambridge"
   answer = ask "What is your answer?"
   if answer != "A"
     alert "I'm sorry that's the wrong answer, try again"
   end
 end
+```
+
+```Ruby
 alert "Correct - Well done!!!"
 score = score + 1
 alert "Your score is " + score.to_s
