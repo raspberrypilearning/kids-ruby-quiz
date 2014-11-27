@@ -50,17 +50,33 @@ So let's step through each of these sections and understand how they work.
 ###Section 1: Introduction
 In the introduction we firstly create a variable.
 
-- Variable: A variable is a container into which we can store data. Think of it as an empty box, we can put anything inside of it and then name it for later use.
+*Variable: A variable is a container into which we can store data. Think of it as an empty box, we can put anything inside of it and then name it for later use.*
 
-In the introduction we create a variable called *answer* and we store a blank value inside of it.
+In the introduction we create a variable called *answer* and we store a blank value inside of it. We we cover why we do this later in the project.
 
 ```Ruby
 answer = " "
 ```
+Our attention now turns to welcoming the player. We use *alert* to create a pop up box that welcomes the player to the game.
+
 ```Ruby
 alert "Welcome to the Hour of Code Quiz"
+```
+Next we create a new variable called *name* and in there we store the answer to a question that we *ask* the player, that question being "What is your name?"
+
+```Ruby
 name = ask "What is your name?"
+```
+For the next line of our quiz we greet the player by their name, which has has been saved as the variable *name*. But we do something rather clever with this, we use *alert* to create another pop up box that joins "Hello " and the players name together. This is called concatenation.
+
+*Concatenation: Concatenation is the operation of joining character strings end-to-end. For example, the concatenation of "snow" and "ball" is "snowball".
+
+```Ruby
 alert "Hello " + name
+```
+
+
+```Ruby
 score = 0
 alert "Your score is " + score.to_s
 ```
