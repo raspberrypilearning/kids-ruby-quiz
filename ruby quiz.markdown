@@ -124,11 +124,18 @@ With the question asked we now need to capture their answer and to do that we us
   end
 end
 ```
+If the player answers correctly, they will skip past the previous loop and will carry on from this point. 
+We create a new *alert* that congratulates the player on their correct answer. We then increase their score by 1 point and then inform the player of their current score. Lastly we reset the *answer* variable to blank ready for the next question.
+
 ```Ruby
 alert "Correct - Well done!!!"
 score = score + 1
 alert "Your score is " + score.to_s
 answer = " "
+```
+Questions 2 and 3 follow exactly the same pattern as Question 1, the code below is simply changed so that we can ask different questions.
+
+```Ruby
 until answer == "A"
   alert "Question 2 - Which reindeer has a bright red nose?\nA: Rudolph. B: Prancer. C: Vixen"
   answer = ask "What is your answer?"
@@ -151,6 +158,10 @@ alert "Correct - Well done!!!"
 score = score + 1
 alert "Your score is " + score.to_s
 answer = " "
+```
+For the last line of our quiz we create a final alert in the same manner as we previously have. This alert informs the player of their score and that the game is now over.
+
+```Ruby
 alert "Congratulations you scored "+score.to_s+"\n GAME OVER"
 ```
 ## Licence
