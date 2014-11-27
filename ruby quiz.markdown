@@ -105,8 +105,19 @@ With the question asked we now need to capture their answer and to do that we us
  ```Ruby
   answer = ask "What is your answer?"
  ```
+ 
+ Now we compare the answer given against the correct answer, and to do this we use an *if* statement.
+ 
+ *if: A conditional statement, where **if** the condition is met an action is taken.*
+ 
+ In this quiz we ask 
+ 
+ *if the **answer** given by the user is **not** the same as "A"*
+ 
  ```Ruby
   if answer != "A"
+ ```
+ ```Ruby
     alert "I'm sorry that's the wrong answer, try again"
   end
 end
