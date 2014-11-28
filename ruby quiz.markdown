@@ -2,15 +2,6 @@
 
 Ruby is an easy to learn language that was created in the late 1990s by Yukihiro "Matz" Matsumoto as a general purpose programming language. In fact Ruby is the language that is used to create music in Sonic Pi. In this tutorial we will create a quiz using a special application called Kids Ruby.
 
-##Requirements
-As well as a Raspberry Pi with an SD card loaded with Raspbian, you'll also need:
-###Hardware
-- Keyboard
-- Mouse
-- Screen
-
-###Software
-- A copy of Kids Ruby
 
 To use Ruby on your Raspberry Pi we will need to install a special version called "Kids Ruby". This version is ideally suited for this project and it can be installed really quickly.
 To install Kids Ruby on your Raspberry Pi you will need to open a terminal, you can do this by double left clicking on the LXTerminal icon that is on your desktop.
@@ -61,7 +52,7 @@ Our quiz is split into three sections of code
 - Game Over & Final Score
 
 So let's step through each of these sections and understand how they work.
-###Section 1: Introduction
+###Step 1: Introduction. Welcoming the player
 In the introduction we first create a variable.
 
 *Variable: A variable is a container into which we can store data. Think of it as an empty box, we can put anything inside of it and then name it for later use.*
@@ -103,7 +94,7 @@ Concatenation can only join *strings* together and our score is an *integer* so 
 ```Ruby
 alert "Your score is " + score.to_s
 ```
-###Section 2: Questions
+###Step 2: Asking Questions and Working With User Input
 A quiz needs questions, but how do we know if the player has answered them correctly?
 In programming we can compare an answer given by the player to what the correct answer is, and until this answer is correct the player cannot progress through the quiz. In Ruby we can instruct the code to repeat a sequence until a certain *condition* is met. In this case we ask a question to the user and give them three possible answers, labelled A, B or C
 In the example below, until the player chooses **A** the code will continue to loop.
@@ -175,6 +166,7 @@ score = score + 1
 alert "Your score is " + score.to_s
 answer = " "
 ```
+###Step 3: Game Over and Final Score
 For the last line of our quiz we create a final alert in the same manner as we previously have. This alert informs the player of their score and that the game is now over.
 
 ```Ruby
