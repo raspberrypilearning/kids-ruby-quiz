@@ -15,6 +15,8 @@ As well as a Raspberry Pi with an SD card loaded with Raspbian, you'll also need
 To use Ruby on your Raspberry Pi we will need to install a special version called "Kids Ruby". This version is ideally suited for this project and it can be installed really quickly.
 To install Kids Ruby on your Raspberry Pi you will need to open a terminal, you can do this by double left clicking on the LXTerminal icon that is on your desktop.
 
+![Image of the Raspberry Pi desktop showing the LXTerminal icon](images/LX.png)
+
 To download the file for installation on your Raspberry Pi type the following into the terminal
 
 ```Bash
