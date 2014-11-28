@@ -36,6 +36,20 @@ Launch the Kids Ruby application by selecting it from the menu, in a few seconds
 
 ![Image of Kids Ruby ready to use](images/4.png)
 
+Kids Ruby uses a simple layout with the screen split into two large sections.
+
+- A large black box, where our Ruby code is typed
+- A large box with shortcuts to built in ideas and projects, as well as the output from any code that is written.
+
+Underneath the large black box are a few buttons.
+
+- Save: Saves your project, it's really important to save your work regularly.
+- Open: Opens a project that has been saved to your computer.
+- Clear: Clears the code in the black box, use with caution.
+- Run: Runs the code in the black box.
+
+Let's get coding!
+
 ##Coding our Quiz
 With the application installed now we can create our quiz game.
 
@@ -168,6 +182,8 @@ alert "Congratulations you scored "+score.to_s+"\n GAME OVER"
 ```
 Putting this all together it looks like this
 ![Animation of the quiz sequence](images/quiz.gif)
+
+Remember to save your work and when ready click on the **Run** button to start your quiz game.
 
 **Well done! You have made a quiz game using Ruby**
 
