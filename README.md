@@ -1,28 +1,32 @@
-# Kids Ruby Quiz Game
+# Kids Ruby quiz game
 
-Make your own quiz game with Kids Ruby and your Raspberry Pi
+Make your own quiz game with Kids Ruby and your Raspberry Pi.
 
-##Requirements
+## Requirements
+
 As well as a Raspberry Pi with an SD card loaded with Raspbian, you'll also need:
-###Hardware
+
+### Hardware
+
 - Keyboard
 - Mouse
 - Screen
 
-###Software
+### Software
+
 - A copy of Kids Ruby
 
-See more information on checking you have these packages installed, and how to install them on the [software installation](software.md) page.
+For more information on checking you have these packages installed, and how to install them, see the [software installation](software.md) page.
 
 ## Steps
 
-1. Introduction. Welcoming the Player
-1. Asking Questions and Working With User Input
-1. Game Over and Final Score
+1. Introduction, welcoming the player
+1. Asking questions and working with user input
+1. Game over and final score
 
 ## Worksheet & included files
 
-The worksheet for the project contains all of the instructions necessary to complete this project
+The worksheet for the project contains all of the instructions necessary to complete this project.
 
 - [The worksheet](worksheet.md)
 
