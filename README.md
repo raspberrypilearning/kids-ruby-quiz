@@ -1,5 +1,7 @@
 # Kids Ruby quiz game
 
+![](images/HOC_Logo_200px.png)
+
 Make your own quiz game with Kids Ruby and your Raspberry Pi.
 
 ## Requirements
