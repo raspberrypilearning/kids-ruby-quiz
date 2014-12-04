@@ -8,13 +8,13 @@ To use Ruby on your Raspberry Pi, we will need to install a special version call
 
 To download the file for installation on your Pi, type the following into the terminal:
 
-```Bash
-wget https://s3.amazonaws.com/kidsruby/raspbian/kidsruby-1.3.2-armv6l.deb
+```bash
+wget http://goo.gl/Py9pql --no-check-certificate -O kidsruby-1.3.2-armv6l.deb
 ```
 
 Once downloaded, type the following into the terminal:
 
-```Bash
+```bash
 sudo dpkg -i kidsruby-1.3.2-armv6l.deb
 ```
 
