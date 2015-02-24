@@ -12,7 +12,7 @@ The quiz is split into three sections of code:
 
 So let's step through each of these sections and understand how they work.
 
-## Step 1: Introduction, welcoming the player
+## Introduction, welcoming the player
 
 Firstly, let's create a variable.
 
@@ -60,7 +60,7 @@ Finally, let's make another alert showing the player their score, which at the s
 alert "Your score is " + score.to_s
 ```
 
-## Step 2: Asking questions and working with user input
+## Asking questions and working with user input
 
 A quiz isn't much fun without questions, but once we add some how do we know if the player has answered them correctly?
 
@@ -136,7 +136,7 @@ alert "Your score is " + score.to_s
 answer = " "
 ```
 
-## Step 3: Game over and final score
+## Game over and final score
 
 For the end of the quiz, create a final `alert` in the same way as before. This tells the player their final score and announces that the game is now over.
 
@@ -149,7 +149,7 @@ Putting this all together, it looks like this:
 ![Animation of the quiz sequence](images/quiz.gif)
 
 Remember to save your work! When you are ready, click on the *Run* button to start your quiz game.
-
+## What's next?
 **Well done! You have made a quiz game using Ruby!**
 
 If you would like to learn more about Kids Ruby, why not explore the great games and ideas already included via Hackety-Hack, Ruby Warrior or Make Games with Gosu?
