@@ -4,6 +4,8 @@
 
 Make your own quiz game with Kids Ruby and your Raspberry Pi.
 
+![](cover.png)
+
 ## Requirements
 
 As well as a Raspberry Pi with an SD card loaded with Raspbian, you'll also need:
