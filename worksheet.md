@@ -1,4 +1,4 @@
-# Creating your own quiz using Kids Ruby
+# Kids Ruby Quiz
 
 Ruby is an easy to learn general-purpose programming language, and it's also used to create music in Sonic Pi. In this tutorial, you will create a quiz using a special application called Kids Ruby.
 
