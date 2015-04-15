@@ -150,7 +150,7 @@ Putting this all together, it looks like this:
 
 Remember to save your work! When you are ready, click on the *Run* button to start your quiz game.
 
-## What's next?
+## What next?
 
 **Well done! You have made a quiz game using Ruby!**
 
