@@ -36,78 +36,83 @@ So let's step through each of these sections and understand how they work.
   alert "Welcome to the Hour of Code Quiz"
   ```
 
-Next, create a new variable called `name`. This is used to store the answer to a question that we ask the player; in this case the question is "What is your name?":
+1. Next, create a new variable called `name`. This is used to store the answer to a question that we ask the player; in this case the question is "What is your name?":
 
-```ruby
-name = ask "What is your name?"
-```
+  ```ruby
+  name = ask "What is your name?"
+  ```
 
-For the next line of the quiz greet the player by their name, which has has been saved as the variable `name`. Let's do something rather clever with this variable. Use `alert` to create another pop-up box that joins "Hello " and the player's name together with a plus symbol. This is called concatenation, which means the process of joining character strings end-to-end. For example, the concatenation of "snow" and "ball" is "snowball".
+1. For the next line of the quiz greet the player by their name, which has has been saved as the variable `name`. Let's do something rather clever with this variable. Use `alert` to create another pop-up box that joins "Hello " and the player's name together with a plus symbol. This is called concatenation, which means the process of joining character strings end-to-end. For example, the concatenation of "snow" and "ball" is "snowball".
 
-```ruby
-alert "Hello " + name
-```
+  ```ruby
+  alert "Hello " + name
+  ```
 
-Next, create a new variable called `score` which will contain the player's score. The initial value stored is zero, which is known in programming as an integer. An integer is a number that can be written without a decimal place, such as 1, 5 and 9.
+1. Next, create a new variable called `score` which will contain the player's score. The initial value stored is zero, which is known in programming as an integer. An integer is a number that can be written without a decimal place, such as 1, 5 and 9.
 
-```ruby
-score = 0
-```
+  ```ruby
+  score = 0
+  ```
 
-Finally, let's make another alert showing the player their score, which at the start of the game is always zero. We can use concatenation again to join "Your score is " to their actual score. But there is a problem, because concatenation can only join strings together; so as the score is an integer the two cannot be joined. To join them together we must temporarily change the score to a string; this is done via `score.to_s`. A string is a sequence of characters; for example, "Hello" is a string.
+1. Finally, let's make another alert showing the player their score, which at the start of the game is always zero. You can use concatenation again to join "Your score is " to their actual score. But there is a problem, because concatenation can only join strings together; so as the score is an integer the two cannot be joined. To join them together we must temporarily change the score to a string; this is done via `score.to_s`. A string is a sequence of characters; for example, "Hello" is a string.
 
-```ruby
-alert "Your score is " + score.to_s
-```
+  ```ruby
+  alert "Your score is " + score.to_s
+  ```
 
-![Image showing code so far in Kids Ruby](images/creating-variable.png)
+![Image showing code so far in Kids Ruby](images/creating-variables.png)
 
 ## Asking questions and working with user input
 
 A quiz isn't much fun without questions, but once we add some how do we know if the player has answered them correctly?
 
-In programming we can compare an answer given by the player to the correct answer; until the player's answer is correct they cannot progress through the quiz. In Ruby we can repeat a sequence, or loop, until a certain condition is met. In this case we ask a question to the user and give them three possible answers, labelled A, B, and C. In the example below, until the player chooses **A** the code will continue to loop:
+In programming you can compare an answer given by the player to the correct answer; until the player's answer is correct they cannot progress through the quiz. In Ruby you can repeat a sequence, or loop, until a certain condition is met. In this case you ask a question to the user and give them three possible answers, labelled A, B, and C. 
 
-```ruby
-until answer == "A"
-```
+1. Underneath your code so far, type the following which will continue to loop until the player chooses **A**:
 
-As we have set the answer condition, now we must create the questions with more `alert`s. You will see an **\n** in the question text which is an instruction to create a new line underneath, similar to when you press Enter on your keyboard.
+  ```ruby
+  until answer == "A"
+  ```
 
-```ruby
-  alert "Question 1 - Where does Father Christmas / Santa Claus live?\nA: North Pole. B: Santa Monica. C: Cambridge"
- ```
+1. As you have set the answer condition, now you must create the questions with more `alert`s. You will see an **\n** in the question text which is an instruction to create a new line underneath, similar to when you press Enter on your keyboard.
+
+  ```ruby
+    alert "Question 1 - Where does Father Christmas / Santa Claus live?\nA: North Pole. B: Santa Monica. C: Cambridge"
+  ```
  
-We now need to capture the answer; to do that we use `ask` to capture their answer and store it as a variable called `answer`. You'll remember that we created this variable at the start of the quiz with a blank value inside. We did this so that the program would progress. If we didn't do this, the quiz would stop before it asked the first question.
+1. You now need to capture the players answer; to do that use `ask` to capture their answer and store it as a variable called `answer`. You'll remember that we created this variable at the start of the quiz with a blank value inside. You did this so that the program would progress. If you didn't do this, the quiz would stop before it asked the first question.
  
-```ruby
-  answer = ask "What is your answer?"
- ```
+  ```ruby
+    answer = ask "What is your answer?"
+  ```
  
- Now we compare the answer given against the correct answer, using an **if** statement. An if statement is conditional: if the condition is met an action is taken.
+1. Now you need to compare the answer given against the correct answer, using an **if** statement. An if statement is conditional: if the condition is met an action is taken.
  
- In this quiz we ask 'if the answer given by the user is not the same as "A"':
+ In this quiz you ask 'if the answer given by the user is not the same as "A"' using this line of code:
  
-```ruby
-  if answer != "A"
- ```
+  ```ruby
+    if answer != "A"
+  ```
  
- So if the answer given by the player is not the same as the answer that we expected, then an alert is created informing the player that their answer is wrong and that they should try again:
+1. So if the answer given by the player is not the same as the answer that we expected, then an alert is created informing the player that their answer is wrong and that they should try again:
  
-```ruby
-    alert "I'm sorry that's the wrong answer, try again"
+  ```ruby
+      alert "I'm sorry that's the wrong answer, try again"
+    end
   end
-end
-```
+  ```
 
-If the player answers correctly, they will skip past the previous loop and will carry on from this point. Create a new `alert` that congratulates the player on their correct answer. Next, increase their score by one point and tell the player their current score. Finally, reset the `answer` variable, ready for the next question.
+1. If the player answers correctly, they will skip past the previous loop and will carry on from this point. Create a new `alert` that congratulates the player on their correct answer. Next, increase their score by one point and tell the player their current score. Finally, reset the `answer` variable, ready for the next question.
 
-```ruby
-alert "Correct - Well done!!!"
-score = score + 1
-alert "Your score is " + score.to_s
-answer = " "
-```
+  ```ruby
+  alert "Correct - Well done!!!"
+  score = score + 1
+  alert "Your score is " + score.to_s
+  answer = " "
+  ```
+1. Save your file by clicking on the **Save** button and name your file `Quiz.rb`. Then click **Run** to test to see if it works.
+
+  ![Image of ruby quiz code for one question](images/question1.png)
 
 Questions 2 and 3 follow exactly the same pattern as Question 1; the code below is simply changed so that we can ask different questions.
 
