@@ -16,8 +16,6 @@ Once downloaded, type the following into the terminal and press **enter**:
 sudo dpkg -i kidsruby-1.3.2-armv6l.deb
 ```
 
-![Image of the LXTerminal running the installation command](images/1.png)
-
 This will install Kids Ruby on your Pi. Once it has been installed, it will be available via the Programming menu.
 
 ![the location of the Kids Ruby application](images/menu.png)
