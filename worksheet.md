@@ -114,7 +114,9 @@ In programming you can compare an answer given by the player to the correct answ
 
   ![Image of ruby quiz code for one question](images/question1.png)
 
-Questions 2 and 3 follow exactly the same pattern as Question 1; the code below is simply changed so that we can ask different questions.
+## Adding more questions
+
+1. Questions 2 and 3 follow exactly the same pattern as Question 1; the code below is simply changed so that we can ask different questions. Add it underneath your code so far:
 
 ```ruby
 until answer == "A"
@@ -143,23 +145,18 @@ answer = " "
 
 ## Game over and final score
 
-For the end of the quiz, create a final `alert` in the same way as before. This tells the player their final score and announces that the game is now over.
+1. For the end of the quiz, create a final `alert` in the same way as before. This tells the player their final score and announces that the game is now over.
 
-```ruby
-alert "Congratulations you scored "+score.to_s+"\n GAME OVER"
-```
+  ```ruby
+  alert "Congratulations you scored "+score.to_s+"\n GAME OVER"
+  ```
 
-Putting this all together, it looks like this:
+1. Remember to save your work! When you are ready, click on the **Run** button to start your quiz game. Your program should look like this:
 
-![Animation of the quiz sequence](images/quiz.gif)
-
-Remember to save your work! When you are ready, click on the **Run** button to start your quiz game.
+  ![Animation of the quiz sequence](images/quiz.gif)
 
 ## What next?
 
-**Well done! You have made a quiz game using Ruby!**
-
-If you would like to learn more about Kids Ruby, why not explore the great games and ideas already included via Hackety-Hack, Ruby Warrior or Make Games with Gosu?
-
-![Image of Kids Ruby ready to use](images/4.png)
+- If you would like to learn more about Kids Ruby, why not explore the great games and ideas already included via Hackety-Hack, Ruby Warrior or Make Games with Gosu?
+- Why not get creative with Ruby in [Sonic Pi](https://www.raspberrypi.org/learning/getting-started-with-sonic-pi/)
 
