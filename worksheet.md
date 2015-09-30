@@ -14,21 +14,27 @@ So let's step through each of these sections and understand how they work.
 
 ## Introduction, welcoming the player
 
-Firstly, let's create a variable.
+1. Launch the Kids Ruby application by selecting it from the menu; in a few seconds the application will be ready to use.
 
-A variable is a container in which we can store data. Think of it as an empty box; we can put anything inside it and then name it for later use.
+![Image of Kids Ruby ready to use](images/4.png)
 
-The following code creates a variable called `answer` and stores a blank value inside it. The reason for this will be explained later in the project.
+1. Click on the **Clear** button and select **Yes** on the window that appears.
 
-```ruby
-answer = " "
-```
+1. Now, let's create a variable.
 
-Now let's make a welcome message for the player. Use `alert` to create a pop-up box that welcomes the player to the game:
+  A variable is a container in which we can store data. Think of it as an empty box; we can put anything inside it and then name it for later use.
 
-```ruby
-alert "Welcome to the Hour of Code Quiz"
-```
+  The following code creates a variable called `answer` and stores a blank value inside it. Type this into the Kids Ruby window. The reason for this will be explained later in the project.
+
+  ```ruby
+  answer = " "
+  ```
+
+1. Now let's make a welcome message for the player. Use `alert` to create a pop-up box that welcomes the player to the game:
+
+  ```ruby
+  alert "Welcome to the Hour of Code Quiz"
+  ```
 
 Next, create a new variable called `name`. This is used to store the answer to a question that we ask the player; in this case the question is "What is your name?":
 
@@ -53,6 +59,8 @@ Finally, let's make another alert showing the player their score, which at the s
 ```ruby
 alert "Your score is " + score.to_s
 ```
+
+![Image showing code so far in Kids Ruby](images/creating-variable.png)
 
 ## Asking questions and working with user input
 
