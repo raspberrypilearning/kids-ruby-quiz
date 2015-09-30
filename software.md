@@ -2,17 +2,15 @@
 
 You'll need to make sure you have the following packages installed to proceed. You'll also need to be online to install packages.
 
-To use Ruby on your Raspberry Pi, we will need to install a special version called "Kids Ruby". This version is ideally suited for this project and it can be installed really quickly. To install Kids Ruby on your Pi you will need to open a terminal window; you can do this by double-clicking on the LXTerminal icon on your desktop.
+To use Ruby on your Raspberry Pi, we will need to install a special version called "Kids Ruby". This version is ideally suited for this project and it can be installed really quickly. To install Kids Ruby on your Pi you will need to open a terminal window; you can do this by clicking on **Menu** then **Accessories** and selecting **Terminal**.
 
-![Image of the Raspberry Pi desktop showing the LXTerminal icon](images/LX.png)
-
-To download the file for installation on your Pi, type the following into the terminal:
+To download the file for installation on your Pi, type the following into the terminal and press **enter**:
 
 ```bash
 wget http://goo.gl/Py9pql --no-check-certificate -O kidsruby-1.3.2-armv6l.deb
 ```
 
-Once downloaded, type the following into the terminal:
+Once downloaded, type the following into the terminal and press **enter**:
 
 ```bash
 sudo dpkg -i kidsruby-1.3.2-armv6l.deb
