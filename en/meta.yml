@@ -5,7 +5,7 @@ description: Make your own quiz game with Kids Ruby and your Raspberry Pi
 original_url: https://raspberrypi.org/learning/kids-ruby-quiz
 theme: yellow
 duration: 2
-listed: true
+listed: false
 ingredient: false
 copyedit: true
 curriculum: 2, design-0, programming-2, phys-comp-0, manufacture-0, community-0
